@@ -21,13 +21,5 @@ public class MeasurementController {
     public ResponseEntity<String> uploadMeasurementData(@RequestBody Integer[] measuredValues){
         return measurementService.saveMeasurementToRepository(Arrays.asList(measuredValues));
     }
-     /*@GetMapping(value = "/measurement")
-    public ResponseEntity<String> getAMeasurement(){
-        List<String>
-
-        return
-
-     }*/
-
 
 }
