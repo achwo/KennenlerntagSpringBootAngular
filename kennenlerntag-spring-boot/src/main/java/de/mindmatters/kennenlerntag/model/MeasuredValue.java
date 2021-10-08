@@ -30,4 +30,19 @@ public class MeasuredValue {
     public MeasuredValue() {
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public Integer getMeasuredValue() {
+        return measuredValue;
+    }
+
+    public void setMeasuredValue(Integer measuredValue) {
+        this.measuredValue = measuredValue;
+    }
 }

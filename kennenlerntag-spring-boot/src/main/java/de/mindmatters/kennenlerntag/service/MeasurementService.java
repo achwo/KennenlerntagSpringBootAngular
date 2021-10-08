@@ -44,4 +44,9 @@ public class MeasurementService {
         measurementRepository.save(measurement);
         return ResponseEntity.ok("Saved.");
     }
+
+    public ResponseEntity<List<Measurement>> getAllMeasurementsForResponse(){
+        List<Measurement> all = measurementRepository.findAll();
+        return ResponseEntity.ok(all);
+    }
 }
