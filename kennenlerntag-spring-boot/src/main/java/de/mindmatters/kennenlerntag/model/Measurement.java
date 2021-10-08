@@ -5,7 +5,6 @@ import org.hibernate.annotations.CreationTimestamp;
 import javax.persistence.*;
 import javax.validation.constraints.Size;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -26,7 +25,13 @@ public class Measurement {
 
     @OneToMany
     @Size(max = 3)
-    private List<MeasuredValue> measuredValues = new ArrayList<>();
+    private List<MeasuredValue> measuredValues;
 
+    public Measurement(List<MeasuredValue> measuredValues) {
+        this.measuredValues = measuredValues;
+    }
+
+    public Measurement() {
+    }
 
 }

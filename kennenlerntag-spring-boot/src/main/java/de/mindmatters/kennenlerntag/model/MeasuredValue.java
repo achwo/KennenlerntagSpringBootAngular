@@ -21,6 +21,13 @@ public class MeasuredValue {
 
     @Min(value = 0)
     @Max(value = 900)
-    private Long measuredValue;
+    private Integer measuredValue;
+
+    public MeasuredValue(Integer measuredValue) {
+        this.measuredValue = measuredValue;
+    }
+
+    public MeasuredValue() {
+    }
 
 }
