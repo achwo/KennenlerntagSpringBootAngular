@@ -1,10 +1,12 @@
 package de.mindmatters.kennenlerntag.repository;
 
+import de.mindmatters.kennenlerntag.model.Measurement;
+import org.springframework.data.repository.CrudRepository;
+
 /**
- * TODO: Ändere mich in eine Beschreibung
  *
  * @author Nils Knudsen
  * @since 08.10.21
  **/
-public class MeasurementRepository {
+public interface MeasurementRepository extends CrudRepository<Measurement, String> {
 }
